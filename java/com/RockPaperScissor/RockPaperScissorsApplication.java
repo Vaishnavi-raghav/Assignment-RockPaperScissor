@@ -13,3 +13,4 @@ public class RockPaperScissorsApplication {
     }
 }
 //http://localhost:8080/play?move=ROCK
+//http://localhost:8080/swagger-ui.html

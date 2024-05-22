@@ -6,17 +6,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
+//import io.swagger.annotations.Api;
+//import io.swagger.annotations.ApiOperation;
 
 @RestController
-@Api(tags = "Rock Paper Scissors Game")
+//@Api(tags = "Rock Paper Scissors Game")
 public class GameController {
 
     @Autowired
     private GameService gameService;
 
-    @ApiOperation(value = "Play Rock Paper Scissors")
+   // @ApiOperation(value = "Play Rock Paper Scissors")
     @GetMapping("/play")
     public String playGame(@RequestParam("move") String playerMove) {
         try {
